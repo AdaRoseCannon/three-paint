@@ -20,4 +20,9 @@ div {
   height: 100%;
   background-color: lavenderblush;
   background-image: paint(three);
+
+  font-family: monospace;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5rem;
 }
