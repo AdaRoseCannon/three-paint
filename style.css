@@ -1,0 +1,23 @@
+:root {
+  --rotate-x: 0;
+  --rotate-y: 0;
+  --rotate-z: 0;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  background-color: lavenderblush;
+  background-image: paint(three);
+}

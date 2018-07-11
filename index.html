@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paint Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        CSS.paintWorklet.addModule('./dist/bundle.js');
+        document.addEventListener('mousemove', function (e) {
+            document.body.style.setProperty('--rotate-y', 30 * ((e.screenX / document.body.clientWidth) - 0.5))
+            document.body.style.setProperty('--rotate-x', 30 * ((e.screenY / document.body.clientHeight) - 0.5))
+        });
+    </script>
+    <div></div>
+</body>
+</html>

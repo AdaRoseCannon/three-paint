@@ -1,0 +1,24 @@
+{
+  "name": "three-paint",
+  "version": "1.0.0",
+  "description": "THREE.js in Paint Worklet",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "rollup -c -i src/main.js -o dist/bundle.js; http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ada Rose Cannon",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "rollup-plugin-json": "^3.0.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-terser": "^1.0.1",
+    "rollup": "^0.62.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "three": "^0.92.0"
+  }
+}
