@@ -46,10 +46,12 @@ scene.add(directionalLight);
 camera.position.z = 5;
 
 const font = new Font(typeface);
-const typeGeom = new TextGeometry(`There is no
-ethical
-consumption
-under capitalism.`, {
+const typeGeom = new TextGeometry(
+`Three.js in CSS
+  through the
+  magic of 
+  Houdini!!
+`, {
   font: font,
   size: 1.0,
   height: 0.5,
